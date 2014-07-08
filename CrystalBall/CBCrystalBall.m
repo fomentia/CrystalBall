@@ -7,7 +7,12 @@
 //
 
 #import "CBCrystalBall.h"
+#import "CBViewController.h"
 
 @implementation CBCrystalBall
+
+- (NSString*) randomPrediction {
+    return nil;
+}
 
 @end

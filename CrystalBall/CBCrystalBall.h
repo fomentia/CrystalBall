@@ -10,4 +10,8 @@
 
 @interface CBCrystalBall : NSObject
 
+    @property (strong, nonatomic) NSArray *predictions;
+
+    - (NSString*) randomPrediction;
+
 @end
