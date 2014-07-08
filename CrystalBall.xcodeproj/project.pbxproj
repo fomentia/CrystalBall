@@ -21,6 +21,7 @@
 		FD907EF4196C7AB700FD1499 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD907ED6196C7AB700FD1499 /* UIKit.framework */; };
 		FD907EFC196C7AB700FD1499 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD907EFA196C7AB700FD1499 /* InfoPlist.strings */; };
 		FD907EFE196C7AB700FD1499 /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD907EFD196C7AB700FD1499 /* CrystalBallTests.m */; };
+		FD907F09196C99FA00FD1499 /* CBCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = FD907F08196C99FA00FD1499 /* CBCrystalBall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		FD907EF9196C7AB700FD1499 /* CrystalBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalBallTests-Info.plist"; sourceTree = "<group>"; };
 		FD907EFB196C7AB700FD1499 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD907EFD196C7AB700FD1499 /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
+		FD907F07196C99FA00FD1499 /* CBCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCrystalBall.h; sourceTree = "<group>"; };
+		FD907F08196C99FA00FD1499 /* CBCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCrystalBall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +115,9 @@
 		FD907ED8196C7AB700FD1499 /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
-				FD907EE1196C7AB700FD1499 /* CBAppDelegate.h */,
-				FD907EE2196C7AB700FD1499 /* CBAppDelegate.m */,
 				FD907EE4196C7AB700FD1499 /* Main.storyboard */,
+				FD907F07196C99FA00FD1499 /* CBCrystalBall.h */,
+				FD907F08196C99FA00FD1499 /* CBCrystalBall.m */,
 				FD907EE7196C7AB700FD1499 /* CBViewController.h */,
 				FD907EE8196C7AB700FD1499 /* CBViewController.m */,
 				FD907EEA196C7AB700FD1499 /* Images.xcassets */,
@@ -126,6 +129,8 @@
 		FD907ED9196C7AB700FD1499 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD907EE1196C7AB700FD1499 /* CBAppDelegate.h */,
+				FD907EE2196C7AB700FD1499 /* CBAppDelegate.m */,
 				FD907EDA196C7AB700FD1499 /* CrystalBall-Info.plist */,
 				FD907EDB196C7AB700FD1499 /* InfoPlist.strings */,
 				FD907EDE196C7AB700FD1499 /* main.m */,
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD907F09196C99FA00FD1499 /* CBCrystalBall.m in Sources */,
 				FD907EDF196C7AB700FD1499 /* main.m in Sources */,
 				FD907EE3196C7AB700FD1499 /* CBAppDelegate.m in Sources */,
 				FD907EE9196C7AB700FD1499 /* CBViewController.m in Sources */,
