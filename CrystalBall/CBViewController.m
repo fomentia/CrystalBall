@@ -7,6 +7,7 @@
 //
 
 #import "CBViewController.h"
+#import "CBCrystalBall.h"
 
 @interface CBViewController ()
 
@@ -18,7 +19,7 @@
 {
     [super viewDidLoad];
     
-    self.predictions = [[NSArray alloc] initWithObjects:@"It is decidedly so", @"Most certainly", @"All signs say YES", @"It is doubtful", @"My reply is no", @"Not in a million years", @"Concentrate and ask again", @"Better not tell you now", @"Unable to answer now", nil];
+    self.crystalBall = [[CBCrystalBall alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -28,8 +29,7 @@
 }
 
 - (IBAction)buttonPressed {
-    int random = arc4random_uniform(self.predictions.count);
-    self.predictionLabel.text = [self.predictions objectAtIndex:random];
+    self.predictionLabel.text = [self.crystalBall randomPrediction];
 }
 
 @end
