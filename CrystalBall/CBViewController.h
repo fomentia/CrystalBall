@@ -14,6 +14,8 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 @property (strong, nonatomic) CBCrystalBall *crystalBall;
-- (IBAction)buttonPressed;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
+- (void) makePrediction;
 
 @end
