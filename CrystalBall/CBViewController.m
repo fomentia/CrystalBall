@@ -7,7 +7,6 @@
 //
 
 #import "CBViewController.h"
-#import "CBCrystalBall.h"
 #import <AudioToolbox/AudioToolbox.h>
 
 @interface CBViewController ()
@@ -22,11 +21,13 @@
 {
     [super viewDidLoad];
     
+    self.predictionLabel.text = nil;
+    
     NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"crystal_ball" ofType:@"mp3"];
     NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
     AudioServicesCreateSystemSoundID(CFBridgingRetain(soundURL), &soundEffect);
     
-    self.crystalBall = [[CBCrystalBall alloc] init];
+    self.crystalBall = [[CrystalBall alloc] init];
     
     self.backgroundImageView.animationImages = [[NSArray alloc] initWithObjects:[UIImage imageNamed:@"CB00001"],
                                                 [UIImage imageNamed:@"CB00002"],

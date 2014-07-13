@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CrystalBall-Swift.h"
 
-@class CBCrystalBall;
+@class CrystalBall;
 
 @interface CBViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
-@property (strong, nonatomic) CBCrystalBall *crystalBall;
+@property (strong, nonatomic) CrystalBall *crystalBall;
 @property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
 - (void) makePrediction;

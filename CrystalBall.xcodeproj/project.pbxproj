@@ -23,7 +23,7 @@
 		FD907EF4196C7AB700FD1499 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD907ED6196C7AB700FD1499 /* UIKit.framework */; };
 		FD907EFC196C7AB700FD1499 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD907EFA196C7AB700FD1499 /* InfoPlist.strings */; };
 		FD907EFE196C7AB700FD1499 /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD907EFD196C7AB700FD1499 /* CrystalBallTests.m */; };
-		FD907F09196C99FA00FD1499 /* CBCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = FD907F08196C99FA00FD1499 /* CBCrystalBall.m */; };
+		FDEBB7A01970881B00A31732 /* CrystalBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEBB79F1970881B00A31732 /* CrystalBall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +58,8 @@
 		FD907EF9196C7AB700FD1499 /* CrystalBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalBallTests-Info.plist"; sourceTree = "<group>"; };
 		FD907EFB196C7AB700FD1499 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD907EFD196C7AB700FD1499 /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
-		FD907F07196C99FA00FD1499 /* CBCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCrystalBall.h; sourceTree = "<group>"; };
-		FD907F08196C99FA00FD1499 /* CBCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCrystalBall.m; sourceTree = "<group>"; };
+		FDEBB79E1970881A00A31732 /* CrystalBall-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrystalBall-Bridging-Header.h"; sourceTree = "<group>"; };
+		FDEBB79F1970881B00A31732 /* CrystalBall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrystalBall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,13 +122,13 @@
 			isa = PBXGroup;
 			children = (
 				FD907EE4196C7AB700FD1499 /* Main.storyboard */,
-				FD907F07196C99FA00FD1499 /* CBCrystalBall.h */,
-				FD907F08196C99FA00FD1499 /* CBCrystalBall.m */,
+				FDEBB79F1970881B00A31732 /* CrystalBall.swift */,
 				FD907EE7196C7AB700FD1499 /* CBViewController.h */,
 				FD907EE8196C7AB700FD1499 /* CBViewController.m */,
 				FD4E3DE2196DEE060046764F /* crystal_ball.mp3 */,
 				FD907EEA196C7AB700FD1499 /* Images.xcassets */,
 				FD907ED9196C7AB700FD1499 /* Supporting Files */,
+				FDEBB79E1970881A00A31732 /* CrystalBall-Bridging-Header.h */,
 			);
 			path = CrystalBall;
 			sourceTree = "<group>";
@@ -263,10 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD907F09196C99FA00FD1499 /* CBCrystalBall.m in Sources */,
 				FD907EDF196C7AB700FD1499 /* main.m in Sources */,
 				FD907EE3196C7AB700FD1499 /* CBAppDelegate.m in Sources */,
 				FD907EE9196C7AB700FD1499 /* CBViewController.m in Sources */,
+				FDEBB7A01970881B00A31732 /* CrystalBall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,10 +391,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall/CrystalBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall/CrystalBall-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CrystalBall/CrystalBall-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,10 +411,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall/CrystalBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall/CrystalBall-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CrystalBall/CrystalBall-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
