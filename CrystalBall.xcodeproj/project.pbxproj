@@ -16,7 +16,6 @@
 		FD907EDF196C7AB700FD1499 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD907EDE196C7AB700FD1499 /* main.m */; };
 		FD907EE3196C7AB700FD1499 /* CBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD907EE2196C7AB700FD1499 /* CBAppDelegate.m */; };
 		FD907EE6196C7AB700FD1499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD907EE4196C7AB700FD1499 /* Main.storyboard */; };
-		FD907EE9196C7AB700FD1499 /* CBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD907EE8196C7AB700FD1499 /* CBViewController.m */; };
 		FD907EEB196C7AB700FD1499 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD907EEA196C7AB700FD1499 /* Images.xcassets */; };
 		FD907EF2196C7AB700FD1499 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD907EF1196C7AB700FD1499 /* XCTest.framework */; };
 		FD907EF3196C7AB700FD1499 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD907ED2196C7AB700FD1499 /* Foundation.framework */; };
@@ -50,8 +49,6 @@
 		FD907EE1196C7AB700FD1499 /* CBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBAppDelegate.h; sourceTree = "<group>"; };
 		FD907EE2196C7AB700FD1499 /* CBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBAppDelegate.m; sourceTree = "<group>"; };
 		FD907EE5196C7AB700FD1499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FD907EE7196C7AB700FD1499 /* CBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBViewController.h; sourceTree = "<group>"; };
-		FD907EE8196C7AB700FD1499 /* CBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBViewController.m; sourceTree = "<group>"; };
 		FD907EEA196C7AB700FD1499 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FD907EF0196C7AB700FD1499 /* CrystalBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrystalBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD907EF1196C7AB700FD1499 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -123,8 +120,6 @@
 			children = (
 				FD907EE4196C7AB700FD1499 /* Main.storyboard */,
 				FDEBB79F1970881B00A31732 /* CrystalBall.swift */,
-				FD907EE7196C7AB700FD1499 /* CBViewController.h */,
-				FD907EE8196C7AB700FD1499 /* CBViewController.m */,
 				FD4E3DE2196DEE060046764F /* crystal_ball.mp3 */,
 				FD907EEA196C7AB700FD1499 /* Images.xcassets */,
 				FD907ED9196C7AB700FD1499 /* Supporting Files */,
@@ -265,7 +260,6 @@
 			files = (
 				FD907EDF196C7AB700FD1499 /* main.m in Sources */,
 				FD907EE3196C7AB700FD1499 /* CBAppDelegate.m in Sources */,
-				FD907EE9196C7AB700FD1499 /* CBViewController.m in Sources */,
 				FDEBB7A01970881B00A31732 /* CrystalBall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
